@@ -225,13 +225,20 @@ textarea {
 
     .alert {
         
-        height: 45%;
+      
         animation-name: bienvenue; 
         animation-duration: 3s; 
         transition: 2s; 
     }
 
     #formalert {
+        margin-top: 1em;
+        width: 100%; 
+        text-align: center; 
+        justify-items: center;
+    }
+
+    .formF {
         margin-top: 1em;
         width: 100%; 
         text-align: center; 
@@ -255,6 +262,18 @@ textarea {
     }
 
 
+     ul li{
+        list-style: none;
+    }
+
+    button {
+        border: none;
+    }
+
+    .listeBtn li {
+
+            margin-right: 1em; 
+    }
 
     .card {
         animation-name: cardAnim; 
