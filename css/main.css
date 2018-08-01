@@ -166,7 +166,7 @@ textarea {
         opacity: 1;
         font-family: "police_tire",serif; 
         font-size: 25px;
-        background-color: #575558;
+        background-color: #5B4841;
         color: #FF533A
     }
 
@@ -193,6 +193,15 @@ textarea {
         
     }
 
+    #footer li  {
+            margin-left: 1em;
+           
+    }
+
+    #footer {
+        justify-content: end;
+    }
+
     .card-columns {
         display: flex; 
          
@@ -210,7 +219,11 @@ textarea {
     }
 
     body {
-        background-color: #648058; 
+        background-color: #FFE599; 
+    }
+
+    .alert-warning {
+        border:  solid black 1px;
     }
 
     .card {
