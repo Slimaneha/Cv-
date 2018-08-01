@@ -334,7 +334,7 @@ textarea {
         }
 
         #footer {
-            height: 30%;
+            display: none;
         }
       }
 
