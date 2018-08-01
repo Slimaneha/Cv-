@@ -64,6 +64,12 @@
                 </li>
             </ul>
 
+            <ul id="footer" style="font-size: 20px !important;" class="flex">
+                    <li><a href=""><i class="fab fa-github-alt"> </i> <br> </a>GitHub</li>
+                    <li><a href=""><i class="fab fa-instagram"></i> <br></a>Instagram</li>
+                    <li><a href=""><i class="fab fa-linkedin-in"></i> <br></a>Linkedin</li>
+                </ul>
+
         </div>
     </nav>
 
@@ -74,16 +80,16 @@
     <!-- Début site -->
 
 
-    <figure id="slimane" class="flex">
+    <figure id="slimane" class="flex ">
         
             <div id="pc" class="flex" style="flex-direction: column">
     
                     <div id="messagesUn" class="alert  alert-warning" role="alert">
                             <strong class="text">Bienvenue</strong>
-                            <cite> Je suis le robot qui vous guidera sur le site , Quelles est votre nom ? </cite> <br>
+                            <cite> Je suis le robot qui vous guidera sur le site , Pourvoir  accédez a certaine catégorie <br> j'aurai bessoin de quelles que information . <br> <span class="centre">Quelles est votre nom ?</span>  </cite> <br>
                            
                            <div class="flex"  style="justify-content: center; flex-direction: column;"> <input id="formalert" class="form-control text" type="text" placeholder="Votre nom"> <br>
-                            <button type="button" class="btn btn-outline-success text" onclick="messagesBienvenue()" >Validé</button>
+                            <button type="button" class="btn btn-outline-success     policeBtn text" onclick="messagesBienvenue()" style="width: 100% !important;" > < Validé ></button>
                            </div>
                            
 
@@ -94,8 +100,8 @@
                                 <cite> 
                                     Pour quelle entreprise rechercher vous un employé ?  
                                 </cite>
-                                <div class="flex"  style="justify-content: center; flex-direction: column;"> <input id="formalertDeux" class="form-control formF text" type="text" placeholder="Votre nom"> <br>
-                                    <button type="button" class="btn btn-outline-success text" onclick="messagesQuestion()" >Validé</button>
+                                <div class="flex"  style="justify-content: center; flex-direction: column;"> <input id="formalertDeux" class="form-control formF text" type="text" placeholder="Nom de votre societe ?"> <br>
+                                    <button type="button" class="btn btn-outline-success     policeBtn text" onclick="messagesBienvenueDeux()" style="width: 100% !important;" > < Validé ></button>
                                    </div>
                                 
                                  
@@ -103,14 +109,10 @@
                 
                 
                             <div id="messages3" class="alert  alert-warning"  style="display: none" role="alert">
-                                    <strong class="text">Bienvenue</strong>
-                                    <cite>  Voilà Les Possibilité du site 
-                                            <ul class="listeBtn  flex ">
-                                                <li><button class="btn  btn-success">CV</button></li>
-                                                <li><button class="btn  btn-success">Lettre</button></li>
-                                                <li><button class="btn  btn-success">ahah</button></li>
-                                                <li><button class="btn  btn-success">baba</button></li>
-                                            </ul>     </cite>
+                                    
+                                    <cite>
+                                        Merci <strong id="MerciName" ></strong> Vous pouvez accédez à tout les catégorie du site 
+                                    </cite>
                                 </div>
                 
                 
@@ -120,7 +122,10 @@
                                     </div>
             </div>
       
-            <img src="img/1.png" alt="" class="img-fluid"> </figure>
+            <img id="imgUn" src="img/1.png" alt="" class="img-fluid">
+            <img id="imgDeux" style="display: none;" src="img/2.png" alt="" class="img-fluid">
+        </figure>
+           
     
           
             <!--        <div class="centre titre" style="text-align: center;">
@@ -129,7 +134,7 @@
                     </div> -->
 
    
-                    <div class="flex">
+                    <div id="tout" class="flex">
 
 
                             <div class="card-columns  centre">
@@ -142,6 +147,9 @@
                                             <h4 class="card-title">Primary card title</h4>
                                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                         </div>
+                                        <div class="card-footer flex">
+                                                <button type="button" class="btn policeBtn btn-outline-warning"> < Accédez  > </button>
+                                              </div>
                                     </div>
                             
                                     <div class="card text-white mb-3 d-inline-block" style="max-width: 20rem;">
@@ -150,6 +158,9 @@
                                             <h4 class="card-title">Primary card title</h4>
                                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                         </div>
+                                        <div class="card-footer flex">
+                                                <button type="button" class="btn policeBtn btn-outline-warning"> < Accédez  > </button>
+                                              </div>
                                     </div>
                             
                                   
@@ -173,19 +184,28 @@
                             
                             
                                     <div class="card text-white  mb-3 d-inline-block" style="max-width: 20rem;">
-                                        <div class="card-header">Header</div>
+                                        <div class="card-header">Lettre de Motivation </div>
                                         <div class="card-body">
                                             <h4 class="card-title">Primary card title</h4>
                                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                         </div>
+                                        <div class="card-footer flex">
+                                                <button id="loock" type="button" style="display: none;" class="btn policeBtn btn-outline-warning"> < Accédez  > </button>
+                                                <button id="loockDeux" type="button" class="btn policeBtn btn-outline-warning" data-toggle="tooltip"data-placement="top" title="Merci de répondre aux question pourvoir accédez à cette catégorie">  < Verrouiller >
+</button>
+                                              </div>
                                     </div>
                             
-                                    <div class="card text-white  mb-3 d-inline-block" style="max-width: 20rem;">
-                                        <div class="card-header">Header</div>
+                                    <div  class="card text-white  mb-3 d-inline-block" style="max-width: 20rem;">
+                                        <div class="card-header">Curriculum vitae</div>
                                         <div class="card-body">
                                             <h4 class="card-title">Primary card title</h4>
                                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                         
                                         </div>
+                                        <div class="card-footer flex">
+                                                <button type="button" class="btn policeBtn btn-outline-warning" data-toggle="modal" data-target="#exampleModal3"> < Accédez  > </button>
+                                              </div>  
                                     </div>
                             
                                 </div>
@@ -200,6 +220,28 @@
                
 
 
+        <!-- Modial -->
+
+
+
+        <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModal3Label" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModal3Label">Modal title</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      ...
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn policeBtn btn-outline-warning" data-dismiss="modal" style="width: 100% !important ;" > < Fermer  > </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
 
 
@@ -213,13 +255,8 @@
 
 
 
-    <nav class="navbar fixed-bottom ">
-         <ul id="footer" class="flex">
-             <li><a href=""><i class="fab fa-github-alt"></i></a></li>
-             <li><a href=""><i class="fab fa-instagram"></i></a></li>
-             <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
-         </ul>
-          </nav>
+
+
 
     <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
     <script>
@@ -240,6 +277,8 @@
             }(window, document, 'script', 'ga'));
         ga('create', 'UA-XXXXX-X', 'auto'); ga('send', 'pageview');
     </script>
+    
+    
 </body>
 
 </html>
