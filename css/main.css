@@ -332,6 +332,10 @@ textarea {
         .titre {
             font-size: 25px;
         }
+
+        #footer {
+            height: 30%;
+        }
       }
 
 
