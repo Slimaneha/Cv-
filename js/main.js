@@ -23,6 +23,27 @@ var nom = document.getElementById("nomLettre")
 var messagesName =""
 var employeur =""
 
+
+
+//Lettre de motivation // 
+
+
+var DommaineUn = "Téléconseiller/Télévendeur"
+var DommaineDeux = " Dévloppeur Web "
+var Dommaine3 = "Manutentionnaire"
+
+
+
+
+//Affiche dommaine 
+
+
+document.getElementById("dommaineUn").innerHTML=DommaineUn
+document.getElementById("dommaine2").innerHTML=DommaineDeux
+document.getElementById("dommaine3").innerHTML=Dommaine3
+
+
+
 function messagesBienvenue() {
 
     messagesName = document.getElementById("formalert").value ;
@@ -54,6 +75,11 @@ function messagesBienvenueDeux() {
 
 
     document.getElementById("MerciName").innerHTML=messagesName ;
+
+    document.getElementById("nom").innerHTML=messagesName ;
+    document.getElementById("boite").innerHTML=employeur ;
+
+
 
 
 

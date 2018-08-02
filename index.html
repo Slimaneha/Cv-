@@ -331,24 +331,43 @@
                 <div class="modal-dialog" role="document">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel">Lettre de motivation </h5>
+                      <h5 class="modal-title" id="exampleModalLabel">Lettre de motivation Bienvenu  </h5>
                       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                       </button>
                     </div>
                     <div class="modal-body">
+                           
+                            <div class="flex ">
+                                    <div style="width: 100%; "  class="card text-white  mb-3 d-inline-block" style="max-width: 30rem;">
+                                            <div class="card-header">Lettre de motivation Personel </div>
+                                            <div class="card-body">
+                                                <h4 class="card-title">Récapitulatif:</h4>
+                                                <p class="card-text">
+                                                    <ul>
+                                                        <li>Votre Nom :  <strong id="nom"></strong> </li>
+                                                        <li>Entreprise :  <strong id="boite"></strong></li>
+                                                    </ul>    
+                                                </p>
 
-                            <div class="card text-white bg-dark mb-3 d-inline-block" style="max-width: 30rem;">
-                                    <div class="card-header"> Bienvenu  </div>
-                                    <div class="card-body">
-                                      <h4 class="card-title">Downtown-CAB  <strong id="nomLettre "></strong> </h4>
-                                      <p class="card-text">Site créer pour un jeux Role-play principalement avec du javaScrpit le style du site et les année 90's </p>
-                                    </div>
+                                                <h4>Dans Quelle dommaine ?  </h4> <br>
 
-                                    <div class="card-footer flex ">
-                                            <button href="#" type="button" class="btn policeBtn btn-outline-warning" style="width: 100% !important;" > < Voirs le site  > </button>
-                                          </div> 
-                                  </div>
+                                                <select style="font-size: 25px !important; margin-bottom: 1em;" class="custom-select">
+                                                        <option id="dommaineUn" value="1"></option>
+                                                        <option id="dommaine2" value="2"></option>
+                                                        <option id="dommaine3" value="3"></option>
+                                                      </select>
+
+                                             
+                                            </div>
+                                            <div class="card-footer flex">
+                                                    <button type="button" class="btn policeBtn btn-outline-warning" data-toggle="modal" data-target="#cv"> < Suivant  > </button>
+                                                  </div>  
+                                        </div>
+
+                            </div>
+
+                           
                       
                     </div>
                     <div class="modal-footer">
