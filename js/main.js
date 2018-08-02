@@ -16,6 +16,7 @@ var btnLoock = document.getElementById("loock")
 var btnLoockDeux = document.getElementById("loockDeux")
 var imgUn =document.getElementById("imgUn")
 var imgDeux =document.getElementById("imgDeux")
+var nom = document.getElementById("nomLettre")
 
 
 
@@ -29,6 +30,8 @@ function messagesBienvenue() {
 
     messagesUn.style.display="none"
     messages2.style.display="block"
+   
+    
 
 
 
@@ -46,6 +49,7 @@ function messagesBienvenueDeux() {
     btnLoockDeux.style.display="none"
     imgUn.style.display="none"
     imgDeux.style.display="block"
+    
 
 
 
@@ -55,4 +59,8 @@ function messagesBienvenueDeux() {
 
 
 }
+
+
+
+
 
