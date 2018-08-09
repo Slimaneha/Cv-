@@ -139,16 +139,15 @@ centre {
     margin: 0;
 }
 
-.titre {
-    font-family: "police_titre", serif;
-    font-size: 35px;
-    color: #FF533A;
-    height: 70%;
-    border-top: dashed #FF533A 4px;
-    border-bottom: dashed #FF533A 4px;
-    margin-top: 2em;
-    height: 90%;
-    text-align: center;
+.titre , h5 {
+    font-family: "police_tire", serif;
+    font-size: 25px;
+}
+
+.list-group-item {
+    border: solid 2px #FFE599 ; 
+    background-color: #5B4841; 
+    color: white; 
 }
 
 .titre h1 {
@@ -231,6 +230,10 @@ body {
 
 .card-footer {
     background-color: #575558;
+}
+
+.fa-star {
+    color: #FFE599;
 }
 
 .card {
@@ -343,6 +346,10 @@ button {
     color: #FFE599;
 }
 
+.marg {
+    margin: 0; 
+    font-size: 20px;
+}
 
 
 
@@ -353,6 +360,11 @@ button {
         justify-content: center;
         margin-top: 2em;
     }
+    *{
+        text-align: center !important;
+    }
+    
+    
     .jumbotron {
         display: none;
     }
@@ -364,6 +376,10 @@ button {
     }
     #footer {
         display: none;
+    }
+
+    .btn {
+        width: 100% !important; 
     }
 }
 
