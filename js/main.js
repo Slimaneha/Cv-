@@ -66,11 +66,11 @@ function messagesBienvenueDeux() {
 
     messages2.style.display="none"
     messages3.style.display="block"
-    btnLoock.style.display="block"
-    btnLoockDeux.style.display="none"
+    btnLoock.style.display="none"
+    btnLoockDeux.style.display="block"
     imgUn.style.display="none"
     imgDeux.style.display="block"
-    
+        
 
 
 
@@ -109,6 +109,19 @@ var back = document.getElementById("backCV")
 
 
 
+
+function afficheAlert () {
+
+    document.getElementById("alert").style.display="block "
+
+}
+
+afficheAlert()
+
+function closeUn () {
+
+    document.getElementById("alert").style.display="none"; 
+}
 
 
 function G2018 () {

@@ -75,12 +75,203 @@
 
 
 
+    <div id="lettre-modale" class="modal fade" style="display: none;" tabindex="-1" role="dialog" aria-labelledby="exampleModal3Label" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModal3Label">Modal title</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <div id="lettreUn">
+
+                    <img id="guide3" src="img/perso/guide.png" alt="">
+                    <img id="slimane3" src="img/perso/4.png" alt="" class="img-fluid">
+
+                    <div class="progress">
+                        <div id="progress-barUn" class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 25%" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100"></div> Vous êtes actuellement à 25% </div>
+                    <br>
+
+
+                    <h5>J'aurais besoins de plus d'information</h5>
+                    <br>
+                    <div id="erreur3" class="alert alert-danger" role="alert">
+                        <strong>Oh Non!</strong> Aucun texte détecté important Aucune information ne sera savgardez vous pouvez
+                        donc repondre aux question
+                    </div>
+                    <label for="">Quelle et le nom de l'entreprise</label>
+                    <br>
+                    <input id="lettre" class="form-control centre" type="text" placeholder="nom de l'entreprise  ">
+                    <br>
+
+                    <ul class="flex">
+                        <li>
+                            <button onClick="lettre1()" class="btn btn-outline-success">Suivant </button>
+                        </li>
+
+                        <li>
+                            <button id="buttonMenu" onClick="back()" type="button" class="btn btn-outline-danger">Retour aux menu </button>
+                        </li>
+                    </ul>
+
+
+
+                </div>
+
+                <div id="lettreDeux">
+                    <img src="img/perso/guide.png" alt="" class="img-fluid">
+                    <div class="progress">
+                        <div id="progress-barDeux" class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 50%" aria-valuenow="50"
+                            aria-valuemin="0" aria-valuemax="100"></div> Vous êtes actuellement à 50% </div>
+                    <h5>Une dernière question</h5>
+                    <div id="erreur4" class="alert alert-danger" role="alert">
+                            <strong>Oh Non!</strong> Aucun texte détecté important Aucune information ne sera savgardez vous pouvez
+                            donc repondre aux question
+                        </div>
+                    <br>
+                    <label for="">Quelles poste avais vous dans l'entreprise</label>
+                    <input id="lettreQ" class="form-control centre" type="text" placeholder="Votre poste   ">
+                    <br>
+                    <ul class="flex">
+                        <li>
+                            <button onClick="lettreDeux()" class="btn btn-outline-success"> Validé</button>
+                        </li>
+                        <li>
+                            <button id="buttonMenu" onClick="back()" type="button" class="btn btn-outline-danger">Retour au menu </button>
+                        </li>
+                    </ul>
+
+
+                </div>
+
+                <div id="lettre3">
+
+                    <img src="img/perso/3.png" alt="" class="img-fluid">
+                    <br>
+                    <div class="progress">
+                        <div id="progress-bar3" class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 90%" aria-valuenow="90"
+                            aria-valuemin="0" aria-valuemax="100">90%</div>
+                    </div>
+
+                    <h2>Récapitulatif</h2>
+
+                    <ul>
+                        <li>Votre nom :
+                            <strong id="nomDeux"></strong>
+                        </li>
+                        <li>Nom de l'entreprise :
+                            <strong id="resultn"></strong>
+                        </li>
+                        <li>Votre poste :
+                            <strong id="resultPo"></strong>
+                        </li>
+                    </ul>
+                    <br>
+
+                    <label for=""> lettre pour le poste de ? </label>
+                    <select id="form2" class="custom-select ">
+                        <option class="selected disabled">
+                            <strong>sélectionner votre choix </strong>
+                        </option>
+                        <option id="choix6" value="1"></option>
+                        <option id="choix4" value="2"></option>
+                        <option id="choix5" value="3"></option>
+                    </select>
+                    <br>
+                    <br>
+
+                    <ul class="flex">
+                        <li>
+                            <button data-dismiss="modal" onClick="compar() " class="btn btn-outline-success"> Voir ma lettre</button>
+                        </li>
+                        <li>
+                            <button onClick="backDeux()" type="button" class="btn btn-outline-danger">Retour au menu </button>
+                        </li>
+                    </ul>
+
+                      </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    <!-- 
+                <div class="modal-footer center">
+                    <ul class="flex">
+                        <li><a class="btn btn-secondary" target="_blank" href="https://twitter.com/slimane59">Twiter <i class="fab fa-twitter"></i></a></li>
+                        <li><a class="btn btn-secondary" target="_blank" href="https://www.linkedin.com/in/slimane-hassani-63782b139/       ">Linkedin <i class="fab fa-linkedin"></i></a></li>
+                        <li><a class="btn btn-secondary" target="_blank" href="https://github.com/Slimaneha">Github <i class="fab fa-github-alt"></i></a></li>
+                       
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>  
+
+                    </div>-->
+
+
+
+
 
     <!-- Start Lettre Motive -->
 
 
    
+    <div id="adresses">
+        <ul class="taille-lettre text-left">
+            <li>Slimane HASSANI</li>
+            <li> 58/3, Rue de Lorraine</li>
+            <li>59100 ROUBAIX</li>
+            <li> +33(0)7.59.62.93.27</li>
+            <li>slimanehassani@hotmail.fr</li>
+        </ul>
     </div>
+
+    <div id="attentions" class="float-right m-d-2">
+        <p class="">À l’attention
+            <strong id="nom"></strong>
+        </p>
+    </div>
+
+
+
+
+    <div id="objets" class=" text-left container-fluid m-l-2">
+        <p>Objet : Candidature au poste de
+            <strong id="poste"></strong>
+        </p>
+    </div>
+
+    <div id="ras contaire-fluid centre ">
+
+        <p class="text-justify" id="corps"></p>
+
+    </div>
+
+
+
+
+    <div class="container-fluid">
+        <p id="corp"></p>
+    </div>
+
+
+    <div class="container-fluid">
+        <p id="merci"></p>
+    </div>
+
+</div>
+
+
 
     
 
@@ -91,6 +282,8 @@
     </script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/lettre.js"></script>
+
     <script src="js/bootstrap.js"></script>
     <script src="https://use.fontawesome.com/a0c828b765.js"></script>
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->

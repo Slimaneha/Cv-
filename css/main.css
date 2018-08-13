@@ -381,6 +381,14 @@ button {
     .btn {
         width: 100% !important; 
     }
+
+    #alert {
+        height: 100% !important;
+    }
+
+    #noaffiche {
+        display: none;
+    }
 }
 
 /* ==========================================================================

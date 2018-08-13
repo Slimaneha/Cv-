@@ -17,7 +17,8 @@
     <link href="https://fonts.googleapis.com/css?family=Kavivanar" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
 
 
 
@@ -52,7 +53,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#"> 
+                    <a class="nav-link" href="#">
                         <span class="sr-only">(current)</span>
                     </a>
                 </li>
@@ -65,14 +66,69 @@
             </ul>
 
             <ul id="footer" style="font-size: 20px !important;" class="flex">
-                    <li><a href=""><i class="fab fa-github-alt"> </i> <br> </a>GitHub</li>
-                    <li><a href=""><i class="fab fa-instagram"></i> <br></a>Instagram</li>
-                    <li><a href=""><i class="fab fa-linkedin-in"></i> <br></a>Linkedin</li>
-                </ul>
+                <li>
+                    <a target="_blank" href="https://github.com/Slimaneha">
+                        <i class="fab fa-github-alt"> </i>
+                        <br> </a>GitHub</li>
+                <li>
+                    <a target="_blank" href="https://www.instagram.com/slimane101/">
+                        <i class="fab fa-instagram"></i>
+                        <br>
+                    </a>Instagram</li>
+                <li>
+                    <a target="_blank" href="https://www.linkedin.com/in/slimane-hassani-63782b139/">
+                        <i class="fab fa-linkedin-in"></i>
+                        <br>
+                    </a>Linkedin</li>
+                    <li>
+                        <a href="mailto:contact@slimanehassani.fr">
+                            <i class="far fa-envelope"></i>
+                            <br>
+                        </a>Email</li>
+            </ul>
 
         </div>
     </nav>
 
+
+    <div class="modal" id="alert" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Attention </h5>
+                    <button onclick="closeUn()" type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                    <div class="alert alert-danger" role="alert">
+                        <strong>Attention</strong> Site créer par moi-même je suis dyslexique donc il a de grande possibilité que
+                        vous retrouvez des faute d'orthographe vous pouvais me les signaler par mail avec un petit copier-coller
+                        cela m'aiderai
+                        <a href="mailto:contact@slimanehassani.fr">Par mail ici</a>
+                    </div>
+
+
+                
+
+
+
+                    
+               
+
+
+
+
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" onclick="closeUn()" data-dismiss="modal">Fermer</button>
+
+            </div>
+        </div>
+    </div>
+    </div>
 
 
 
@@ -81,519 +137,599 @@
 
 
     <figure id="slimane" class="flex ">
-        
-            <div id="pc" class="flex" style="flex-direction: column ; flex-wrap: wrap !important;">
-    
-                    <div id="messagesUn" class="alert  alert-warning" role="alert">
-                            <strong class="text">Bienvenue</strong>
-                            <cite> Je suis le robot qui vous guidera sur le site , Pourvoir  accédez a certaine catégorie <br> j'aurai bessoin de quelles que information . <br> <span class="centre">Quelles est votre nom ?</span>  </cite> <br>
-                           
-                           <div class="flex"  style="justify-content: center; flex-direction: column;"> <input id="formalert" class="form-control text" type="text" placeholder="Votre nom"> <br>
-                            <button type="button" class="btn btn-outline-success     policeBtn text" onclick="messagesBienvenue()" style="width: 100% !important;" > < Validé ></button>
-                           </div>
-                           
 
-                        </div>
-                
-                        <div id="messages2" class="alert  alert-warning" style="display: none" role="alert">
-                                <strong class="text" id="name"></strong>:  
-                                <cite> 
-                                    Pour quelle entreprise rechercher vous un employé ?  
-                                </cite>
-                                <div class="flex"  style="justify-content: center; flex-direction: column;"> <input id="formalertDeux" class="form-control formF text" type="text" placeholder="Nom de votre societe ?"> <br>
-                                    <button type="button" class="btn btn-outline-success     policeBtn text" onclick="messagesBienvenueDeux()" style="width: 100% !important;" > < Validé ></button>
-                                   </div>
-                                
-                                 
-                            </div>
-                
-                
-                            <div id="messages3" class="alert  alert-warning"  style="display: none" role="alert">
-                                    
-                                    <cite>
-                                        Merci <strong id="MerciName" ></strong> Vous pouvez accédez à tout les catégorie du site 
-                                    </cite>
-                                </div>
-                
-                
-                                <div id="Messages4" class="alert  alert-warning"  style="display: none" role="alert">
-                                        <strong class="text">Bienvenue</strong>
-                                        <cite> Je suis le robot qui vous guidera sur le site </cite>
-                                    </div>
+        <div id="pc" class="flex" style="flex-direction: column ; flex-wrap: wrap !important;">
+
+            <div id="messagesUn" class="alert  alert-warning" role="alert">
+                <strong class="text">Bienvenue</strong>
+                <cite> Je suis le robot qui vous guidera sur le site , Pourvoir accédez a certaine catégorie
+                    <br> j'aurai bessoin de quelles que information .
+                    <br>
+                    <span class="centre">Quelles est votre nom ?</span>
+                </cite>
+                <br>
+
+                <div class="flex" style="justify-content: center; flex-direction: column;">
+                    <input id="formalert" class="form-control text" type="text" placeholder="Votre nom">
+                    <br>
+                    <button type="button" class="btn btn-outline-success     policeBtn text" onclick="messagesBienvenue()" style="width: 100% !important;">
+                        < Validé>
+                    </button>
+                </div>
+
+
             </div>
-      
-            <img id="imgUn" src="img/1.png" alt="" class="img-fluid">
-            <img id="imgDeux" style="display: none;" src="img/2.png" alt="" class="img-fluid">
-        </figure>
-           
-    
-          
-            <!--        <div class="centre titre" style="text-align: center;">
+
+            <div id="messages2" class="alert  alert-warning" style="display: none" role="alert">
+                <strong class="text" id="name"></strong>:
+                <cite>
+                    Pour quelle entreprise rechercher vous un employé ?
+                </cite>
+                <div class="flex" style="justify-content: center; flex-direction: column;">
+                    <input id="formalertDeux" class="form-control formF text" type="text" placeholder="Nom de votre societe ?">
+                    <br>
+                    <button type="button" class="btn btn-outline-success     policeBtn text" onclick="messagesBienvenueDeux()" style="width: 100% !important;">
+                        < Validé>
+                    </button>
+                </div>
+
+
+            </div>
+
+
+            <div id="messages3" class="alert  alert-warning" style="display: none" role="alert">
+
+                <cite>
+                    Merci
+                    <strong id="MerciName"></strong> Vous pouvez accédez à tout les catégorie du site Lettre de motivation bientôt disponible ! 
+                </cite>
+            
+                </div>
+
+
+            <div id="Messages4" class="alert  alert-warning" style="display: none" role="alert">
+                <strong class="text">Bienvenue</strong>
+                <cite> Je suis le robot qui vous guidera sur le site </cite>
+            </div>
+        </div>
+
+        <img id="imgUn" src="img/1.png" alt="" class="img-fluid">
+        <img id="imgDeux" style="display: none;" src="img/2.png" alt="" class="img-fluid">
+    </figure>
+
+
+
+    <!--        <div class="centre titre" style="text-align: center;">
                             <h1>Devlopement Web </h1> <br>
 
                     </div> -->
 
-   
-                    <div id="tout" class="flex">
+
+    <div id="tout" class="flex">
 
 
-                            <div class="card-columns  centre">
-
-
-           
-                                    <div id="ah" class="card text-white mb-3 d-inline-block" style="max-width: 20rem;">
-                                        <div class="card-header">Projets Fini </div>
-                                        <div class="card-body">
-                                            <h4 class="card-title">Projets Web Fini </h4>
-                                            <p class="card-text">Trouvez Ici tout les projets web dévlopper par moi même </p>
-                                        </div>
-                                        <div class="card-footer flex">
-                                                <button type="button" class="btn policeBtn btn-outline-warning" data-toggle="modal" data-target="#fini"> < Accédez  > </button>
-                                              </div>
-                                    </div>
-                            
-                                    <div class="card text-white mb-3 d-inline-block" style="max-width: 20rem;">
-                                        <div class="card-header">Future Projets </div>
-                                        <div class="card-body">
-                                            <h4 class="card-title">Future Projets Web </h4>
-                                            <p class="card-text">Vous Trouverait ici tout les projets que je souhaite  faire appoutire  </p>
-                                        </div>
-                                        <div class="card-footer flex">
-                                            <button type="button" class="btn policeBtn btn-outline-warning" data-toggle="modal" data-target="#future"> < Accédez  > </button>
-                                        </div>
-                                    </div>
-                            
-                                  
-                            
-                            
-                            
-                            
-                                </div>
-                            
-                            
-                            
-                                
-                            
-                                <div class="card-columns  centre">
-                            
-                                   
-                            
-                            
-                            
-                                    
-                            
-                            
-                                    <div class="card text-white  mb-3 d-inline-block" style="max-width: 20rem;">
-                                        <div class="card-header">Lettre de Motivation </div>
-                                        <div class="card-body">
-                                            <h4 class="card-title">Lettre de motivation </h4>
-                                            <p class="card-text">Des lettres pour chaque corp de métier .</p>
-                                        </div>
-                                        <div class="card-footer flex">
-                                                <button id="loock" type="button" style="display: none;"  class="btn policeBtn btn-outline-warning" data-toggle="modal" data-target="#lettre"> < Accédez  > </button>
-                                                <button id="loockDeux" type="button" class="btn policeBtn btn-outline-warning" data-toggle="tooltip"data-placement="top" title="Merci de répondre aux question pourvoir accédez à cette catégorie">  < Verrouiller >
-</button>
-                                              </div>
-                                    </div>
-                            
-                                    <div  class="card text-white  mb-3 d-inline-block" style="max-width: 20rem;">
-                                        <div class="card-header">Curriculum vitae</div>
-                                        <div class="card-body">
-                                            <h4 class="card-title">CV</h4>
-                                            <p class="card-text">Trouvez Ici un Cv pour chaque domaine partiquée</p>
-                                         
-                                        </div>
-                                        <div class="card-footer flex">
-                                                <button type="button" class="btn policeBtn btn-outline-warning" data-toggle="modal" data-target="#cv"> < Accédez  > </button>
-                                              </div>  
-                                    </div>
-                            
-                                </div>
-                            
-
-                    </div>
-   
-   
-   
-   
-   
-               
-
-
-        <!-- Modial -->
-
-
-                    <!--Modial Projets fini -->
+        <div class="card-columns  centre">
 
 
 
-                    <div class="modal" id="fini" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                          <div class="modal-content">
-                            <div class="modal-header">
-                              <h5 class="modal-title" id="exampleModalLabel">Projets web Fini  </h5>
-                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                              </button>
-                            </div>
-                            <div class="modal-body">
-                                
-                                <div class="flex" style="flex-direction: column; ">
+            <div id="ah" class="card text-white mb-3 d-inline-block" style="max-width: 25rem;">
+                <div class="card-header">Projets Fini </div>
+                <div class="card-body">
+                    <h4 class="card-title">Projets Web Fini </h4>
+                    <p class="card-text">Trouvez Ici tout les projets web dévlopper par moi même </p>
+                </div>
+                <div class="card-footer flex">
+                    <button type="button" class="btn policeBtn btn-outline-warning" data-toggle="modal" data-target="#fini">
+                        < Accédez>
+                    </button>
+                </div>
+            </div>
 
-                                        <div class="card text-white bg-dark mb-3 d-inline-block" style="max-width: 30rem;">
-                                                <div class="card-header">Handibus <i  class="fas fa-mobile"></i> <i class="fas fa-tablet-alt"></i>  <i class="fas fa-language"></i> </div>
-                                                <div class="card-body">
-                                                  <h4 class="card-title">Projets Handibus   </h4>
-                                                  <p class="card-text">Projets réalisé en équipe avec la formation Simplon Roubaix le but de ce site etait de donner une vitrine à une association de sensibilisation aux handicap</p>
-                                                </div>
-                                                <div class="card-footer flex ">
-                                                        <button href="#" type="button" class="btn policeBtn btn-outline-warning" style="width: 100% !important;" > < Voirs le site  > </button>
-                                                      </div>  
-                                              </div>
-
-
-                                              <div class="card text-white bg-dark mb-3 d-inline-block" style="max-width: 30rem;">
-                                                    <div class="card-header">Downtown-CAB</div>
-                                                    <div class="card-body">
-                                                      <h4 class="card-title">Downtown-CAB </h4>
-                                                      <p class="card-text">Site créer pour un jeux Role-play principalement avec du javaScrpit le style du site et les année 90's </p>
-                                                    </div>
-
-                                                    <div class="card-footer flex ">
-                                                            <button href="#" type="button" class="btn policeBtn btn-outline-warning" style="width: 100% !important;" > < Voirs le site  > </button>
-                                                          </div> 
-                                                  </div>
-
-                                </div>
+          <!--  <div class="card text-white mb-3 d-inline-block" style="max-width: 20rem;">
+                <div class="card-header">Future Projets </div>
+                <div class="card-body">
+                    <h4 class="card-title">Future Projets Web </h4>
+                    <p class="card-text">Vous Trouverait ici tout les projets que je souhaite faire appoutire </p>
+                </div>
+                <div class="card-footer flex">
+                    <button type="button" class="btn policeBtn btn-outline-warning" data-toggle="modal" data-target="#future">
+                        < Accédez>
+                    </button>
+                </div>
+            </div> -->
 
 
 
-                            </div>
-                            <div class="modal-footer">
-                                <button style="width: 100% !important" type="button" class="btn policeBtn btn-outline-warning" data-dismiss="modal"> < Fermer >  </button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
 
-                      
-                      <!-- **************************************************************************-->
-                    
 
-                    <!-- Monial CV -->
-        <div class="modal" id="cv" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
+
+        </div>
+
+
+
+
+
+        <div class="card-columns  centre">
+
+
+
+
+
+
+
+
+            <div class="card text-white  mb-3 d-inline-block" style="max-width: 25rem;">
+                <div class="card-header">Lettre de Motivation </div>
+                <div class="card-body">
+                    <h4 class="card-title">Lettre de motivation </h4>
+                    <p class="card-text">Des lettres pour chaque dommaine . Vous devais avoirs répondue au question pour accédez à cette fonction   .</p>
+                </div>
+                <div class="card-footer flex">
+                    <button id="loock" type="button" style="display: none;" class="btn policeBtn btn-outline-warning" data-toggle="modal" data-target="#lettre">
+                        < Accédez>
+                    </button>
+                    <button id="loockDeux" type="button" class="btn policeBtn btn-outline-warning" data-toggle="tooltip" data-placement="top"
+                        title="Merci de répondre aux question pourvoir accédez à cette catégorie">
+                        < Verrouiller>
+                    </button>
+                </div>
+            </div>
+
+            <div class="card text-white  mb-3 d-inline-block" style="max-width: 25rem;">
+                <div class="card-header">Curriculum vitae</div>
+                <div class="card-body">
+                    <h4 class="card-title">CV</h4>
+                    <p class="card-text">Trouvez Ici un Cv pour chaque domaine partiquée</p>
+
+                </div>
+                <div class="card-footer flex">
+                    <button type="button" class="btn policeBtn btn-outline-warning" data-toggle="modal" data-target="#cv">
+                        < Accédez>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+    <!-- Modial -->
+
+
+    <!--Modial Projets fini -->
+
+
+
+    <div class="modal" id="fini" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Cv</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
+                    <h5 class="modal-title" id="exampleModalLabel">Projets web Fini </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                 </div>
                 <div class="modal-body">
-                  
+
+                    <div class="flex" style="flex-direction: column; ">
+
+                        <div class="card text-white bg-dark mb-3 d-inline-block" style="max-width: 30rem;">
+                            <div class="card-header">Handibus
+                                <i class="fas fa-mobile"></i>
+                                <i class="fas fa-tablet-alt"></i>
+                                <i class="fas fa-language"></i>
+                            </div>
+                            <div class="card-body">
+                                <h4 class="card-title">Projets Handibus </h4>
+                                <p class="card-text">Projets réalisé en équipe avec la formation Simplon Roubaix le but de ce site etait de donner
+                                    une vitrine à une association de sensibilisation aux handicap</p>
+                            </div>
+                            <div class="card-footer flex ">
+                                <button href="#" type="button" class="btn policeBtn btn-outline-warning" style="width: 100% !important;">
+                                    < Voirs le site>
+                                </button>
+                            </div>
+                        </div>
+
+
+                        <div class="card text-white bg-dark mb-3 d-inline-block" style="max-width: 30rem;">
+                            <div class="card-header">Downtown-CAB</div>
+                            <div class="card-body">
+                                <h4 class="card-title">Downtown-CAB </h4>
+                                <p class="card-text">Site créer pour un jeux Role-play principalement avec du javaScrpit le style du site et les
+                                    année 90's </p>
+                            </div>
+
+                            <div class="card-footer flex ">
+                                <button href="#" type="button" class="btn policeBtn btn-outline-warning" style="width: 100% !important;">
+                                    < Voirs le site>
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+                <div class="modal-footer">
+                    <button style="width: 100% !important" type="button" class="btn policeBtn btn-outline-warning" data-dismiss="modal">
+                        < Fermer>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- **************************************************************************-->
+
+
+    <!-- Monial CV -->
+    <div class="modal" id="cv" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Cv</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
                     <div class="list-group">
-                     
-                     <!--2018-->
-                     
-                        <a onclick="G2018 ()" id="Ab2018"href="#!" class="list-group-item list-group-item-action flex-column align-items-start " style="background-color:#5B4841 ; color:  white; " >
-                          <div class="d-flex w-100 justify-content-between">
-                            <h5 class="mb-1">Formation orientation mission locale</h5>
-                            <small>2018</small>
-                          </div>
-                          <p class="mb-1">Formation D'orientation professionnel </p>
-                          <small>Durée 1 An Lieux : Mission local Roubaix  </small>
-                          <br>
-                         
+
+                        <!--2018-->
+
+                        <a onclick="G2018 ()" id="Ab2018" href="#!" class="list-group-item list-group-item-action flex-column align-items-start "
+                            style="background-color:#5B4841 ; color:  white; ">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">Formation orientation mission locale</h5>
+                                <small>2018</small>
+                            </div>
+                            <p class="mb-1">Formation D'orientation professionnel </p>
+                            <small>Durée 1 An Lieux : Mission local Roubaix </small>
+                            <br>
+
                         </a>
 
 
                         <div id="Ac2018" style="display: none">
-                            
 
-                            <h1 class="titre" style="text-align: center;">Acquis  </h1>
+
+                            <h1 class="titre" style="text-align: center;">Acquis </h1>
 
                             <div class="list-group">
-                                <a href="#!" class="list-group-item list-group-item-action flex-column align-items-start "  style="background-color:#5B4841 ; color:  white; ">
-                                  <div class="d-flex w-100 justify-content-between">
-                                    <h5 class="mb-1">Mis en place d'un projets professionnel</h5>
-                                    
-                                  </div>
-                                  <p class="mb-1"></p>
-                                  <small>   </small>
+                                <a href="#!" class="list-group-item list-group-item-action flex-column align-items-start " style="background-color:#5B4841 ; color:  white; ">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1">Mis en place d'un projets professionnel</h5>
+
+                                    </div>
+                                    <p class="mb-1"></p>
+                                    <small> </small>
                                 </a>
-                                <a href="#!" class="list-group-item list-group-item-action flex-column align-items-start"   style="background-color:#5B4841 ; color:  white;">
-                                  <div class="d-flex w-100 justify-content-between">
-                                    <h5 class="mb-1"> </h5>
-                                    <small class="text-muted"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>  </small>
-                                  </div>
-                                  <p class="mb-1"></p>
-                                  <small class="text-muted"></small>
+                                <a href="#!" class="list-group-item list-group-item-action flex-column align-items-start" style="background-color:#5B4841 ; color:  white;">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1"> </h5>
+                                        <small class="text-muted">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </small>
+                                    </div>
+                                    <p class="mb-1"></p>
+                                    <small class="text-muted"></small>
                                 </a>
-                                
-                              </div>
+
+                            </div>
 
 
 
                         </div>
-                            
-                        
-                        <!--2017-->
-                        <a id="Ab2017" href="#!"  onclick="G2017 ()" class="list-group-item list-group-item-action flex-column align-items-start">
-                          <div class="d-flex w-100 justify-content-between">
-                            <h5 class="mb-1">Simplon Roubaix </h5>
-                            <small class="text-muted">2017</small>
-                          </div>
-                          <p class="mb-1">Formation au Code " HTML5 CSS3 JavaScript " </p>
-                          <small class="text-muted">Durée 9 mois Lieux : ADEP Roubaix  </small> <br>
 
-                         
+
+                        <!--2017-->
+                        <a id="Ab2017" href="#!" onclick="G2017 ()" class="list-group-item list-group-item-action flex-column align-items-start">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">Simplon Roubaix </h5>
+                                <small class="text-muted">2017</small>
+                            </div>
+                            <p class="mb-1">Formation au Code " HTML5 CSS3 JavaScript " </p>
+                            <small class="text-muted">Durée 9 mois Lieux : ADEP Roubaix </small>
+                            <br>
+
+
 
                         </a>
 
 
 
                         <div id="Ac2017" style="display: none">
-                            
 
-                            <h1 class="titre" style="text-align: center;">Acquis  </h1>
+
+                            <h1 class="titre" style="text-align: center;">Acquis </h1>
 
                             <div class="list-group">
-                                <a href="#!" class="list-group-item list-group-item-action flex-column align-items-start "  style="background-color:#5B4841 ; color:  white; ">
-                                  <div class="d-flex w-100 justify-content-between">
-                                    <h5 class="mb-1">Formation </h5>
-                                    
-                                  </div>
-                                  <p class="mb-1"> 		Simplon à était pour mois une révélation enfin pouvoirs apprendre ma passion cars l’informatique ma toujours passionner depuis mon plus jeune âge  ce qui me passionne le plus et que ce domaine et en constances évolution nous devons toujours apprendre de nouvelle technologie et un métier ou la logique et primordiale comprendre et résoudre les bug qui nous font face         </p>
-                                  <small>   </small>
+                                <a href="#!" class="list-group-item list-group-item-action flex-column align-items-start " style="background-color:#5B4841 ; color:  white; ">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1">Formation </h5>
+
+                                    </div>
+                                    <p class="mb-1"> Simplon à était pour mois une révélation enfin pouvoirs apprendre ma passion cars l’informatique
+                                        ma toujours passionner depuis mon plus jeune âge ce qui me passionne le plus et que
+                                        ce domaine et en constances évolution nous devons toujours apprendre de nouvelle
+                                        technologie et un métier ou la logique et primordiale comprendre et résoudre les
+                                        bug qui nous font face </p>
+                                    <small> </small>
                                 </a>
-                                <a href="#!" class="list-group-item list-group-item-action flex-column align-items-start"   style="background-color:#5B4841 ; color:  white;">
-                                  <div class="d-flex w-100 justify-content-between">
-                                    <h5 class="mb-1"> Acquis </h5>
-                                    <small class="text-muted"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>  </small>
-                                  </div>
-                                  <p class="mb-1"><ul>
-                                      <li>
-                                          <p>Linux</p>
-                                      </li>
-                                      <li>
-                                          <p>Windows Xp , vista , 7 , 8 ,8.1 ,10</p>
-                                      </li>
-                                      <li>
-                                          <p>Git/Gitthube</p>
-                                      </li>
-                                      <li>
-                                          <p>HTML5</p>
-                                      </li>
-                                      <li>
-                                          <p>CSS3</p>
-                                      </li>
-                                      <li>
-                                          <p>JavaScript</p>
-                                      </li>
-                                      <li>
-                                          <p>Webdesing</p>
-                                      </li>
-                                      <li>
-                                          <p>VScode</p>
-                                      </li>
-                                     
-                                  </ul></p>
-                                  <small class="text-muted"></small>
+                                <a href="#!" class="list-group-item list-group-item-action flex-column align-items-start" style="background-color:#5B4841 ; color:  white;">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1"> Acquis </h5>
+                                        <small class="text-muted">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </small>
+                                    </div>
+                                    <p class="mb-1">
+                                        <ul>
+                                            <li>
+                                                <p>Linux</p>
+                                            </li>
+                                            <li>
+                                                <p>Windows Xp , vista , 7 , 8 ,8.1 ,10</p>
+                                            </li>
+                                            <li>
+                                                <p>Git/Gitthube</p>
+                                            </li>
+                                            <li>
+                                                <p>HTML5</p>
+                                            </li>
+                                            <li>
+                                                <p>CSS3</p>
+                                            </li>
+                                            <li>
+                                                <p>JavaScript</p>
+                                            </li>
+                                            <li>
+                                                <p>Webdesing</p>
+                                            </li>
+                                            <li>
+                                                <p>VsCode</p>
+                                            </li>
+
+                                        </ul>
+                                    </p>
+                                    <small class="text-muted"></small>
                                 </a>
-                               
-                              </div>
+
+                            </div>
 
 
 
                         </div>
 
 
-                      
 
-                        
+
+
                         <!--2016-->
-                        <a id="Ab2016" href="#!"  onclick="G2016 ()" class="list-group-item list-group-item-action flex-column align-items-start">
-                          <div class="d-flex w-100 justify-content-between">
-                            <h5 class="mb-1">Service Civique </h5>
-                            <small class="text-muted">2016</small>
-                          </div>
-                          <p class="mb-1">Service Civique pour GRDF et l'association interface lille </p>
-                          <small class="text-muted">Durée 6 mois  Lieux : Interface LILLE   </small>
+                        <a id="Ab2016" href="#!" onclick="G2016 ()" class="list-group-item list-group-item-action flex-column align-items-start">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">Service Civique </h5>
+                                <small class="text-muted">2016</small>
+                            </div>
+                            <p class="mb-1">Service Civique pour GRDF et l'association interface lille </p>
+                            <small class="text-muted">Durée 6 mois Lieux : Interface LILLE </small>
                         </a>
 
 
 
                         <div id="Ac2016" style="display: none">
-                            
 
-                            <h1 class="titre" style="text-align: center;">Acquis  </h1>
+
+                            <h1 class="titre" style="text-align: center;">Acquis </h1>
 
                             <div class="list-group">
-                                <a href="#!" class="list-group-item list-group-item-action flex-column align-items-start "  style="background-color:#5B4841 ; color:  white; ">
-                                  <div class="d-flex w-100 justify-content-between">
-                                    <h5 class="mb-1">Description de la mission</h5>
-                                    
-                                  </div>
-                                  <p class="mb-1">La mission était d’aller chez les habitants leur donné des conseiller sur la sécurité du gaz et des conseiller pour réduire leur facture d’énergie. Nous devions aussi essayer de savoirs ci les personne avais des soucis de facture pour des éventuel orientation d’aide social . </p>
-                                  <small>   </small>
+                                <a href="#!" class="list-group-item list-group-item-action flex-column align-items-start " style="background-color:#5B4841 ; color:  white; ">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1">Description de la mission</h5>
+
+                                    </div>
+                                    <p class="mb-1">La mission était d’aller chez les habitants leur donné des conseiller sur la sécurité
+                                        du gaz et des conseiller pour réduire leur facture d’énergie. Nous devions aussi
+                                        essayer de savoirs ci les personne avais des soucis de facture pour des éventuel
+                                        orientation d’aide social . </p>
+                                    <small> </small>
                                 </a>
-                                <a href="#!" class="list-group-item list-group-item-action flex-column align-items-start"   style="background-color:#5B4841 ; color:  white;">
-                                  <div class="d-flex w-100 justify-content-between">
-                                    <h5 class="mb-1"> Acquis</h5>
-                                    <small class="text-muted"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>  </small>
-                                  </div>
-                                  <p class="mb-1">
-                                      <ul>
-                                          <li>
-                                              <p>Démarche social</p>
-                                          </li>
-                                          <li>
-                                              <p>Conseiller sur la sécurité GAZ </p>
-                                          </li>
-                                          <li>
-                                              <p>Travaille en groupe</p>
-                                          </li>
-                                          <li>
-                                              <p>Organisation d’évènement de quartier  </p>
-                                          </li>
-                                          
-                                      </ul>
-                                  </p>
-                                  <small class="text-muted"></small>
+                                <a href="#!" class="list-group-item list-group-item-action flex-column align-items-start" style="background-color:#5B4841 ; color:  white;">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1"> Acquis</h5>
+                                        <small class="text-muted">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </small>
+                                    </div>
+                                    <p class="mb-1">
+                                        <ul>
+                                            <li>
+                                                <p>Démarche social</p>
+                                            </li>
+                                            <li>
+                                                <p>Conseiller sur la sécurité GAZ </p>
+                                            </li>
+                                            <li>
+                                                <p>Travaille en groupe</p>
+                                            </li>
+                                            <li>
+                                                <p>Organisation d’évènement de quartier </p>
+                                            </li>
+
+                                        </ul>
+                                    </p>
+                                    <small class="text-muted"></small>
                                 </a>
-                               
-                              </div>
+
+                            </div>
 
 
 
                         </div>
 
                         <!--2015-->
-                        <a id="Ab2015" href="#!"  onclick="G2015 ()" class="list-group-item list-group-item-action flex-column align-items-start">
+                        <a id="Ab2015" href="#!" onclick="G2015 ()" class="list-group-item list-group-item-action flex-column align-items-start">
                             <div class="d-flex w-100 justify-content-between">
-                              <h5 class="mb-1">Mission interim  </h5>
-                              <small class="text-muted">2015</small>
+                                <h5 class="mb-1">Mission interim </h5>
+                                <small class="text-muted">2015</small>
                             </div>
                             <p class="mb-1">Différente mission notament dans l'agros alimentaire pour ADECO, Start People</p>
-                            <small class="text-muted">Durée 6 mois  Lieux : Roubaix , Lille   </small>
-                          </a>
+                            <small class="text-muted">Durée 6 mois Lieux : Roubaix , Lille </small>
+                        </a>
 
 
 
-                          <div id="Ac2015" style="display: none">
-                            
+                        <div id="Ac2015" style="display: none">
 
-                            <h1 class="titre" style="text-align: center;">Acquis  </h1>
+
+                            <h1 class="titre" style="text-align: center;">Acquis </h1>
 
                             <div class="list-group">
-                                <a href="#!" class="list-group-item list-group-item-action flex-column align-items-start "  style="background-color:#5B4841 ; color:  white; ">
-                                  <div class="d-flex w-100 justify-content-between">
-                                    <h5 class="mb-1">Description</h5>
-                                    
-                                  </div>
-                                  <p class="mb-1"> Mission interim Pour Addeco et Start Pepole Déménagement,agroalimentaire,inprimerie  </p>
-                                  <small>   </small>
+                                <a href="#!" class="list-group-item list-group-item-action flex-column align-items-start " style="background-color:#5B4841 ; color:  white; ">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1">Description</h5>
+
+                                    </div>
+                                    <p class="mb-1"> Mission interim Pour Addeco et Start Pepole Déménagement,agroalimentaire,inprimerie </p>
+                                    <small> </small>
                                 </a>
-                                <a href="#!" class="list-group-item list-group-item-action flex-column align-items-start"   style="background-color:#5B4841 ; color:  white;">
-                                  <div class="d-flex w-100 justify-content-between">
-                                    <h5 class="mb-1">Competence Acquis</h5>
-                                    <small class="text-muted"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>  </small>
-                                  </div>
-                                  <p class="mb-1"> 
-                                      <ul>
-                                          <li>
-                                              <p>  Respect des règles d’hygiène agroalimentaire    </p>
-                                          </li>
-                                          <li>
-                                              <p>Utilisation Transpalette manuel/électrique   </p>
-                                          </li>
-                                          <li>
-                                              <p>Consigne de sécurité manutention </p>
-                                          </li>
-                                          <li>
-                                              <p>	Position manutention  </p>
-                                          </li>
-                                      </ul>
-                                  </p>
-                                  <small class="text-muted"></small>
+                                <a href="#!" class="list-group-item list-group-item-action flex-column align-items-start" style="background-color:#5B4841 ; color:  white;">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1">Competence Acquis</h5>
+                                        <small class="text-muted">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </small>
+                                    </div>
+                                    <p class="mb-1">
+                                        <ul>
+                                            <li>
+                                                <p> Respect des règles d’hygiène agroalimentaire </p>
+                                            </li>
+                                            <li>
+                                                <p>Utilisation Transpalette manuel/électrique </p>
+                                            </li>
+                                            <li>
+                                                <p>Consigne de sécurité manutention </p>
+                                            </li>
+                                            <li>
+                                                <p> Position manutention </p>
+                                            </li>
+                                        </ul>
+                                    </p>
+                                    <small class="text-muted"></small>
                                 </a>
-                               
-                              </div>
+
+                            </div>
 
 
 
                         </div>
 
                         <!--2014  -->
-                          <a id="Ab2014" href="#!"  onclick="G2014 ()" class="list-group-item list-group-item-action flex-column align-items-start">
+                        <a id="Ab2014" href="#!" onclick="G2014 ()" class="list-group-item list-group-item-action flex-column align-items-start">
                             <div class="d-flex w-100 justify-content-between">
-                              <h5 class="mb-1">Televendeur   </h5>
-                              <small class="text-muted">2014</small>
+                                <h5 class="mb-1">Televendeur </h5>
+                                <small class="text-muted">2014</small>
                             </div>
                             <p class="mb-1">Appel Entrant pour Com'Plus </p>
-                            <small class="text-muted">Durée 4 mois Lieux Com'Plus  Croix  </small>
-                          </a>
+                            <small class="text-muted">Durée 4 mois Lieux Com'Plus Croix </small>
+                        </a>
 
 
 
-                          <div id="Ac2014" style="display: none">
-                            
+                        <div id="Ac2014" style="display: none">
 
-                            <h1 class="titre" style="text-align: center;">Acquis  </h1>
+
+                            <h1 class="titre" style="text-align: center;">Acquis </h1>
 
                             <div class="list-group">
-                                <a href="#!" class="list-group-item list-group-item-action flex-column align-items-start "  style="background-color:#5B4841 ; color:  white; ">
-                                  <div class="d-flex w-100 justify-content-between">
-                                    <h5 class="mb-1">Description : </h5>
-                                    
-                                  </div>
-                                  <p class="mb-1">Respections d’appel pour Com’plus Croix  ,  orientation de la conversation vert une démarche commercial avec Script réponses avec des contre argument au argument avancé par le client (non Script) connaissance des loi en vigueur pour la vente à distance et avec engagement     </p>
-                                  <small>   </small>
+                                <a href="#!" class="list-group-item list-group-item-action flex-column align-items-start " style="background-color:#5B4841 ; color:  white; ">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1">Description : </h5>
+
+                                    </div>
+                                    <p class="mb-1">Respections d’appel pour Com’plus Croix , orientation de la conversation vert une démarche
+                                        commercial avec Script réponses avec des contre argument au argument avancé par le
+                                        client (non Script) connaissance des loi en vigueur pour la vente à distance et avec
+                                        engagement </p>
+                                    <small> </small>
                                 </a>
-                                <a href="#!" class="list-group-item list-group-item-action flex-column align-items-start"   style="background-color:#5B4841 ; color:  white;">
-                                  <div class="d-flex w-100 justify-content-between">
-                                    <h5 class="mb-1">Competence acquise </h5>
-                                    <small class="text-muted"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>  </small>
-                                  </div>
-                                  <p class="mb-1">
-                                      <ul>
-                                          <li>
-                                              <p>Suivis d'un script </p>
-                                          </li>
-                                          <li>
-                                              <p>réglementation vente à distance</p>
-                                          </li>
-                                          <li>
-                                              <p>Réponses au argument avancé par le client</p>
-                                          </li>
-                                          <li>
-                                              <p>Orientation commercial</p>
-                                          </li>
-                                          <li>
-                                              <p>Suivi des dossiers</p>
-                                          </li>
-                                          <li>
-                                              Vente d'assurances 
-                                          </li>
-                                      </ul>
-                                  </p>
-                                  <small class="text-muted"></small>
+                                <a href="#!" class="list-group-item list-group-item-action flex-column align-items-start" style="background-color:#5B4841 ; color:  white;">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1">Competence acquise </h5>
+                                        <small class="text-muted">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </small>
+                                    </div>
+                                    <p class="mb-1">
+                                        <ul>
+                                            <li>
+                                                <p>Suivis d'un script </p>
+                                            </li>
+                                            <li>
+                                                <p>réglementation vente à distance</p>
+                                            </li>
+                                            <li>
+                                                <p>Réponses au argument avancé par le client</p>
+                                            </li>
+                                            <li>
+                                                <p>Orientation commercial</p>
+                                            </li>
+                                            <li>
+                                                <p>Suivi des dossiers</p>
+                                            </li>
+                                            <li>
+                                                Vente d'assurances
+                                            </li>
+                                        </ul>
+                                    </p>
+                                    <small class="text-muted"></small>
                                 </a>
-                                <a href="#!" class="list-group-item list-group-item-action flex-column align-items-start"  style="background-color:#5B4841 ; color:  white;">
-                                  <div class="d-flex w-100 justify-content-between">
-                                    <h5 class="mb-1">Ce que j’aime dans le dommaine :   </h5>
-                                    <small class="text-muted"> <i class="fas fa-info"></i></small>
-                                  </div>
-                                  <p class="mb-1">Le métier de téléconseiller / télévendeur et un métier de challenge chaque appel et un défie le défit qui faux relever toujours mettre des objectifs une fois qui sont remplis on arrive à une satisfaction personnelle </p>
-                                  <small class="text-muted"></small>
+                                <a href="#!" class="list-group-item list-group-item-action flex-column align-items-start" style="background-color:#5B4841 ; color:  white;">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1">Ce que j’aime dans le dommaine : </h5>
+                                        <small class="text-muted">
+                                            <i class="fas fa-info"></i>
+                                        </small>
+                                    </div>
+                                    <p class="mb-1">Le métier de téléconseiller / télévendeur et un métier de challenge chaque appel et un
+                                        défie le défit qui faux relever toujours mettre des objectifs une fois qui sont remplis
+                                        on arrive à une satisfaction personnelle </p>
+                                    <small class="text-muted"></small>
                                 </a>
-                              </div>
+                            </div>
 
 
 
                         </div>
-                      </div>
+                    </div>
 
 
 
@@ -612,92 +748,108 @@
 
                 </div>
                 <div class="modal-footer">
-                  <button style="width: 100% !important" type="button" class="btn policeBtn btn-outline-warning" data-dismiss="modal"> < Fermer >  </button>
-                  <button id="backCV" style="display: none" style="width: 100% !important" type="button" class="btn policeBtn btn-outline-warning" onclick="retour ()"> < Retour >  </button>
+                    <button style="width: 100% !important" type="button" class="btn policeBtn btn-outline-warning" data-dismiss="modal">
+                        < Fermer>
+                    </button>
+                    <button id="backCV" style="display: none" style="width: 100% !important" type="button" class="btn policeBtn btn-outline-warning"
+                        onclick="retour ()">
+                        < Retour>
+                    </button>
 
                 </div>
-              </div>
             </div>
-          </div>
+        </div>
+    </div>
 
 
 
-          <!--  Modial Future -->
+    <!--  Modial Future -->
 
 
-          <div class="modal" id="future" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
+    <div class="modal" id="future" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Projets Future </h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
+                    <h5 class="modal-title" id="exampleModalLabel">Projets Future </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                 </div>
                 <div class="modal-body">
-                  ...
+                    ...
                 </div>
                 <div class="modal-footer">
-                    <button  style="width: 100% !important" type="button" class="btn policeBtn btn-outline-warning" data-dismiss="modal"> < Fermer >  </button>
+                    <button style="width: 100% !important" type="button" class="btn policeBtn btn-outline-warning" data-dismiss="modal">
+                        < Fermer>
+                    </button>
                 </div>
-              </div>
             </div>
-          </div>
+        </div>
+    </div>
 
-          <!--Lettre -->
+    <!--Lettre -->
 
-            
-          <div class="modal" id="lettre" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel">Lettre de motivation Bienvenu  </h5>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+
+    <div class="modal" id="lettre" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Lettre de motivation Bienvenu </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
-                      </button>
-                    </div>
-                    <div class="modal-body">
-                           
-                            <div class="flex ">
-                                    <div style="width: 100%; "  class="card text-white  mb-3 d-inline-block" style="max-width: 30rem;">
-                                            <div class="card-header">Lettre de motivation Personel </div>
-                                            <div class="card-body">
-                                                <h4 class="card-title">Récapitulatif:</h4>
-                                                <p class="card-text">
-                                                    <ul>
-                                                        <li>Votre Nom :  <strong id="nom"></strong> </li>
-                                                        <li>Entreprise :  <strong id="boite"></strong></li>
-                                                    </ul>    
-                                                </p>
+                    </button>
+                </div>
+                <div class="modal-body">
 
-                                                <h4>Dans Quelle dommaine ?  </h4> <br>
+                    <div class="flex ">
+                        <div style="width: 100%; " class="card text-white  mb-3 d-inline-block" style="max-width: 30rem;">
+                            <div class="card-header">Lettre de motivation Personel </div>
+                            <div class="card-body">
+                                <h4 class="card-title">Récapitulatif:</h4>
+                                <p class="card-text">
+                                    <ul>
+                                        <li>Votre Nom :
+                                            <strong id="nom"></strong>
+                                        </li>
+                                        <li>Entreprise :
+                                            <strong id="boite"></strong>
+                                        </li>
+                                    </ul>
+                                </p>
 
-                                                <select style="font-size: 25px !important; margin-bottom: 1em;" class="custom-select">
-                                                        <option id="dommaineUn" value="1"></option>
-                                                        <option id="dommaine2" value="2"></option>
-                                                        <option id="dommaine3" value="3"></option>
-                                                      </select>
+                                <h4>Dans Quelle dommaine ? </h4>
+                                <br>
 
-                                             
-                                            </div>
-                                            <div class="card-footer flex">
-                                                    <button type="button" class="btn policeBtn btn-outline-warning" data-toggle="modal" data-target="#cv"> < Suivant  > </button>
-                                                  </div>  
-                                        </div>
+                                <select style="font-size: 25px !important; margin-bottom: 1em;" class="custom-select">
+                                    <option id="dommaineUn" value="1"></option>
+                                    <option id="dommaine2" value="2"></option>
+                                    <option id="dommaine3" value="3"></option>
+                                </select>
+
 
                             </div>
+                            <div class="card-footer flex">
+                                <button type="button" class="btn policeBtn btn-outline-warning" data-toggle="modal" data-target="#cv">
+                                    < Suivant>
+                                </button>
+                            </div>
+                        </div>
 
-                           
-                      
                     </div>
-                    <div class="modal-footer">
-                        <button  style="width: 100% !important" type="button" class="btn policeBtn btn-outline-warning" data-dismiss="modal"> < Fermer >  </button>
-                    </div>
-                  </div>
+
+
+
                 </div>
-              </div>
-    
-    
+                <div class="modal-footer">
+                    <button style="width: 100% !important" type="button" class="btn policeBtn btn-outline-warning" data-dismiss="modal">
+                        < Fermer>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 
 
 
@@ -717,19 +869,18 @@
     <script src="js/main.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="https://use.fontawesome.com/a0c828b765.js"></script>
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-    <script>
-            (function (b, o, i, l, e, r) {
-                b.GoogleAnalyticsObject = l; b[l] || (b[l] =
-                    function () { (b[l].q = b[l].q || []).push(arguments) }); b[l].l = +new Date;
-                e = o.createElement(i); r = o.getElementsByTagName(i)[0];
-                e.src = 'https://www.google-analytics.com/analytics.js';
-                r.parentNode.insertBefore(e, r)
-            }(window, document, 'script', 'ga'));
-        ga('create', 'UA-XXXXX-X', 'auto'); ga('send', 'pageview');
-    </script>
-    
-    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-123720425-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-123720425-1');
+</script>
+
+
+
 </body>
 
 </html>
