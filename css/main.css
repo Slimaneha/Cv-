@@ -378,10 +378,6 @@ button {
         flex-direction: column;
     }
 
-    #mobile {
-        display: block; 
-
-    }
 
     #pc {
         display: none; 
