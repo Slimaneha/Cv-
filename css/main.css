@@ -357,6 +357,8 @@ button {
 
 
 
+
+
 @media screen and (max-width: 1000px) {
     .card-columns {
         flex-direction: column;
@@ -400,8 +402,10 @@ button {
         height: 100% !important;
     }
 
-    #noaffiche {
-        display: none;
+    
+
+    .card {
+        width: 100% !important ;
     }
 }
 
