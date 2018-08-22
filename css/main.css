@@ -406,6 +406,7 @@ button {
 
     .card {
         width: 100% !important ;
+        margin-right: 1em; 
     }
 }
 
