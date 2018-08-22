@@ -377,7 +377,10 @@ button {
     .flex {
         flex-direction: column;
     }
-
+.slimane{
+    width: 80% !important; 
+    justify-content: center; 
+}
 
     #pc {
         display: none; 
