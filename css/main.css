@@ -355,7 +355,9 @@ button {
     display: none; 
 }
 
-
+.card {
+    max-width: 30rem !important;
+}
 
 
 
@@ -370,7 +372,9 @@ button {
         text-align: center !important;
     }
     
-    
+    .card {
+        max-width: 90% !important;
+    }
     .jumbotron {
         display: none;
     }
