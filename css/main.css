@@ -351,6 +351,10 @@ button {
     font-size: 20px;
 }
 
+#mobile {
+    display: none; 
+}
+
 
 
 @media screen and (max-width: 1000px) {
@@ -371,6 +375,16 @@ button {
     .flex {
         flex-direction: column;
     }
+
+    #mobile {
+        display: block; 
+
+    }
+
+    #pc {
+        display: none; 
+    }
+   
     .titre {
         font-size: 25px;
     }

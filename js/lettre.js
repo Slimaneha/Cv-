@@ -10,77 +10,8 @@
      
      
      
-                         function compar () {
-                             choixUn = textselectionne = selectElmtUn.options[selectElmtUn.selectedIndex].text;
      
-     
-                             if (choixUn === téléconseiller){
-                                 document.getElementById("one").style.display="none"
-                                 document.getElementById("formation").style.display="none"
-                                 document.getElementById("lettre-type").style.display="block"
-                                 document.getElementById("entre").innerHTML=entreprise; 
-                                 document.getElementById("postePe").innerHTML=posteDeux; 
-                                 document.getElementById("nom5").innerHTML=nom; 
-                                 document.getElementById("corp").innerHTML=post1
-                                 document.getElementById("merci").innerHTML=merci
-                                 document.getElementById("poste").innerHTML=téléconseiller
-                                 document.getElementById("off-1").style.display="none"
-                                 document.getElementById("one").style.display="none"
-                                 document.getElementById("off-2").style.display="none"
-                                 document.getElementById("off-3").style.display="none"
-                                 
-                                
-     
-                             }
-     
-                             else if (choixUn === web){
-                                 document.getElementById("formation").style.display="none"
-                                 document.getElementById("one").style.display="none"
-                                 document.getElementById("lettre-type").style.display="block"
-                                 document.getElementById("lettre-type").style.display="block"
-                                 document.getElementById("entre").innerHTML=entreprise; 
-                                 document.getElementById("postePe").innerHTML=posteDeux; 
-                                 document.getElementById("nom5").innerHTML=nom; 
-                                 document.getElementById("corp").innerHTML=post2
-                                 document.getElementById("merci").innerHTML=merci
-                                 document.getElementById("poste").innerHTML=web
-                                 document.getElementById("off-1").style.display="none"
-                                 document.getElementById("one").style.display="none"
-                                 document.getElementById("off-2").style.display="none"
-                                 document.getElementById("off-3").style.display="none"
-            
-     
-     
-     
-     
-                             }
-     
-                             else if (choixUn === manutentionnaire ){
-                                 document.getElementById("formation").style.display="none"
-                                 document.getElementById("one").style.display="none"
-                                 document.getElementById("merci").innerHTML=merci
-                                 document.getElementById("lettre-type").style.display="block"
-                                 document.getElementById("lettre-type").style.display="block"
-                                 document.getElementById("entre").innerHTML=entreprise; 
-                                 document.getElementById("postePe").innerHTML=posteDeux; 
-                                 document.getElementById("nom5").innerHTML=nom; 
-                                 document.getElementById("corp").innerHTML=post3
-                                 document.getElementById("poste").innerHTML=manutentionnaire
-                                 document.getElementById("off-1").style.display="none"
-                                 document.getElementById("one").style.display="none"
-                                 document.getElementById("off-2").style.display="none"
-                                 document.getElementById("off-3").style.display="none"
-     
-     
-                                
-     
-     
-     
-                             }
-                             
-     
-     
-                         }
+                         
 
 
 
