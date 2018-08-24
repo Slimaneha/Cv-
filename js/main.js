@@ -38,9 +38,9 @@ var Dommaine3 = "Manutentionnaire"
 //Affiche dommaine 
 
 
-document.getElementById("dommaineUn").innerHTML=DommaineUn
-document.getElementById("dommaine2").innerHTML=DommaineDeux
-document.getElementById("dommaine3").innerHTML=Dommaine3
+//document.getElementById("dommaineUn").innerHTML=DommaineUn
+//document.getElementById("dommaine2").innerHTML=DommaineDeux
+//document.getElementById("dommaine3").innerHTML=Dommaine3
 
 
 

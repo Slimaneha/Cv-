@@ -211,6 +211,11 @@ centre {
     text-align: center;
 
 }
+.cc {
+    justify-content: center; 
+    margin-top: 2em;
+    margin-left: 1em;
+}
 
 #pp {
    width: 80%;
@@ -458,13 +463,20 @@ button {
     *{
         text-align: center !important;
     }
+
+    #ex{
+        justify-content: center !important;
+        margin-left: 2em;
+    }
+
+    #lettreDeux{
+        font-size: 10px !important;
+    }
     
     .card {
         max-width: 90% !important;
     }
-    .jumbotron {
-        display: none;
-    }
+   
     .flex {
         flex-direction: column;
     }
@@ -473,16 +485,12 @@ button {
     justify-content: center; 
 }
 
-    #pc {
-        display: none; 
-    }
+  
    
     .titre {
         font-size: 25px;
     }
-    #footer {
-        display: none;
-    }
+ 
 
     .btn {
         width: 100% !important; 
