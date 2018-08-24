@@ -213,7 +213,8 @@ centre {
 }
 
 #pp {
-    margin-right: 5em;
+   width: 80%;
+   margin-right: 1em;
 }
 
 .card-header {
