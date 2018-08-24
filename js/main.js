@@ -66,8 +66,8 @@ function messagesBienvenueDeux() {
 
     messages2.style.display="none"
     messages3.style.display="block"
-    btnLoock.style.display="none"
-    btnLoockDeux.style.display="block"
+    btnLoock.style.display="block"
+    btnLoockDeux.style.display="none"
     imgUn.style.display="none"
     imgDeux.style.display="block"
         

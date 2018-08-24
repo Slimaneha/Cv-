@@ -1,6 +1,8 @@
 
                  var selectElmtUn = document.getElementById("form2");
                  var web = "Intégrateur web"
+                 var télévente = "Télévendeur / Téléconseiller "
+                 var manutention ="Manutention"
                  post1 = ("Expérimenté dans le domaine de la télévente avec ou sans script, j’ai pu développer les techniques commerciales, un sens de l’argumentation, une aisance dans la communication et dans l’écoute nécessaires pour exercer le métier  dans des conditions optimales. Par ailleurs, j’ai acquis une bonne connaissance de la législation en vigueur relative à la vente à distance, ce qui me permet de travailler en toute sécurité pour mon entreprise et pour ses clients.     J’ai pu acquérir un regard juste sur  fonctionnement, des pratique et des exigences. Ainsi,  je suis certain de pouvoir m’adapter rapidement au sein de l’entreprise et aux cadences données. Attentif, organisé et rigoureux,  je saurai être au plus proche des attentes de vos clients tout en étant efficace et respectueux du règlement.  Ainsi, je suis certain de pouvoir m’adapter rapidement au sein de l’entreprise et aux cadences données.")
                  merci = "Je vous remercie par avance de l’intérêt que vous porterez à ma demande.   Je suis disponible de suite pour vous rencontrer lors d’un entretien au cours duquel je vous préciserai mes motivations de vive voix.Dans l’attente d’un retour, je vous prie d’agréer, Madame, Monsieur, l’expression de mes salutations distinguées."
      
@@ -9,7 +11,12 @@
          post3= ("Mes expériences professionnelles passées, m’ont permis de développer des connaissances dans les règles d’hygiène et de sécurité et d’en développer la maîtrise. Elles m’ont permis, également, d’acquérir une vision juste du métier d’Agent de logistique et de ses exigences. Aujourd’hui, je suis capable d’utiliser le scanner à lecteur optique, le transpalette électrique ou manuel, de constituer des colis à partir d’un bon de commande, d’en contrôler la qualité et de les conditionner. Respectueux des cadences, dynamique et organisé je saurai mener l’ensemble des tâches qui me seront confiées. Le tout dans l’intérêt de la satisfaction de vos clients, du bon fonctionnement de votre entreprise et dans une volonté d’intégration au sein de vos équipes. Je suis disponible de suite pour vous rencontrer lors d’un entretien au cours duquel je vous préciserai mes motivations de vive voix.Dans l’attente d’un retour, je vous prie d’agréer, Madame, Monsieur, l’expression de mes salutations distinguées.  ")
      
      
-     
+
+         document.getElementById("choix6").innerHTML=web
+         document.getElementById("choix5").innerHTML=télévente
+         document.getElementById("choix4").innerHTML=manutention
+
+
      
                          
 
@@ -20,4 +27,3 @@
                              document.getElementById("lettre-modale").style.display="block"
                          }
 
-                         afficheLettre()
