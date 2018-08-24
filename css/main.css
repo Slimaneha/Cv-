@@ -188,7 +188,7 @@ centre {
     background-color: white; 
     border: solid black 2px;
     border-bottom: none !important;
-    width: 90% !important;
+    width: 100% !important;
 
 }
 
@@ -408,7 +408,7 @@ button {
 #corp {
   
     text-align: center;
-    width: 90% !important;
+    width: 100% !important;
     background-color: white;
     border: solid #5B4841 2px; 
     border-top: none; 
