@@ -294,7 +294,8 @@ function lettreAffiche ()
  function backtoLettre () {
 
     formLettre.style.display="none"
-    structure.style.display="flex"
+    structure.style.display="block"
+    document.getElementById("lettre").style.display="none"
 
 
  } 

@@ -446,7 +446,7 @@ button {
 }
 
 #corp {
-  
+     text-justify: auto; 
     text-align: center;
     width: 100% !important;
     background-color: white;
