@@ -375,6 +375,10 @@ button {
     height: 70%;
 }
 
+#lettreStart {
+    display: none; 
+}
+
 /*modial*/
 
 .modal-header {
