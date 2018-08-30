@@ -262,3 +262,39 @@ function retour () {
     
     back.style.display = "none"
 }
+
+
+
+
+
+
+
+
+// LETTRE MOTIVATION !! 
+
+
+
+formLettre = document.getElementById("lettreStart")
+structure = document.getElementById("cv")
+
+function lettreAffiche () 
+{
+
+    formLettre.style.display="flex"
+    structure.style.display="none"
+
+
+
+}
+
+
+// Retour lettre 
+
+
+ function backtoLettre () {
+
+    formLettre.style.display="none"
+    structure.style.display="flex"
+
+
+ } 
